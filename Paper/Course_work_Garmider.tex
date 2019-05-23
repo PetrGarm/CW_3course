@@ -1,0 +1,128 @@
+\documentclass[a4paper, 14pt]{article}
+\usepackage[utf8]{inputenc}
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{wrapfig,lipsum,cleveref}
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{listings}
+\usepackage{color}
+\usepackage{geometry} % Простой способ задавать поля
+\usepackage{longtable}
+
+\linespread{1.5}
+
+\geometry{top=25mm}
+\geometry{bottom=35mm}
+\geometry{left=35mm}
+\geometry{right=20mm}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codered}{rgb}{0.130,0,0}
+\definecolor{codedodgerblue}{rgb}{0.176,0.224,0.230}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codedodgerblue},
+	keywordstyle=\color{codegreen},
+	numberstyle=\tiny\color{codegreen},
+	stringstyle=\color{codered},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+
+%% Номера формул
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+%% Шрифты
+\usepackage{euscript}	 % Шрифт Евклид
+\usepackage{mathrsfs} % Красивый матшрифт
+
+%% Свои команды
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+
+\title{Использование LSTM нейронных сетей для прогнозирования макроэкономических рядов.}
+\usepackage{cmap}					% поиск в PDF
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\author{Гармидер Петр}
+\date{\today}
+\begin{document}
+
+
+\thispagestyle{empty}
+\begin{center}
+	\textbf{ПРАВИТЕЛЬСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ}\\
+	\vspace{2ex}
+	\textbf{Федеральное государственное автономное\\ образовательное учреждение высшего образования}
+	
+	\vspace{2ex}
+	
+	\textbf{Национальный исследовательский университет \\ <<Высшая школа экономики>>}
+	
+	\vspace{8ex}
+	\begin{flushright}
+		Факультет экономических наук\\
+		Образовательная программа <<Экономика>>
+	\end{flushright}
+\end{center}
+\vspace{9ex}
+
+\begin{center}
+	{\textbf{КУРСОВАЯ РАБОТА
+	}}
+	\vspace{1ex}
+	
+	На тему <<Вариация алгоритма кросс-валидации со взвешиванием наблюдений>>
+\end{center}
+\vspace{1ex}
+\begin{flushright}
+	\noindent
+	Студент группы БЭК161\\Гармидер Петр Александрович\\
+	\vspace{13ex}
+	Научный руководитель:\\
+	Борис Демешев
+	
+\end{flushright}	
+
+\vfill
+
+\begin{center}
+	Москва 2019
+	
+\end{center}
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+
+
+\newpage
+\bibliographystyle{utf8gost705u}  %% стилевой файл для оформления по ГОСТу
+\bibliography{biblio}     %% имя библиографической базы (bib-файла) 
+
+
+\end{document}
