@@ -15,6 +15,7 @@
 *.exe
 *.o
 *.so
+*.ipynb_checkpoints
 
 # Packages #
 ############
